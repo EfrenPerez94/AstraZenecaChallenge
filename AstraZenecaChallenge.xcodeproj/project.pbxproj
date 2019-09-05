@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32E8BD772320D7CF00B5E962 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E8BD762320D7CF00B5E962 /* user.json */; };
+		32E8BD7C2320DB1D00B5E962 /* AstraRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E8BD7B2320DB1D00B5E962 /* AstraRepository.swift */; };
+		32E8BD7E2320EA4D00B5E962 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E8BD7D2320EA4D00B5E962 /* ContactViewController.swift */; };
 		32F1B4F8231F6C08002EF63B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B4F7231F6C08002EF63B /* AppDelegate.swift */; };
 		32F1B4FA231F6C08002EF63B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B4F9231F6C08002EF63B /* ProfileViewController.swift */; };
 		32F1B4FF231F6C0D002EF63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F1B4FE231F6C0D002EF63B /* Assets.xcassets */; };
 		32F1B502231F6C0D002EF63B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F1B500231F6C0D002EF63B /* LaunchScreen.storyboard */; };
+		32F1B510231F7340002EF63B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B50F231F7340002EF63B /* Constants.swift */; };
+		32F1B512231F737B002EF63B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B511231F737B002EF63B /* Data.swift */; };
+		32F1B514231F7387002EF63B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B513231F7387002EF63B /* ProfileView.swift */; };
+		32F1B516231F74A9002EF63B /* ContactsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B515231F74A9002EF63B /* ContactsDataSource.swift */; };
+		32F1B51A231F753C002EF63B /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B519231F753C002EF63B /* ContactTableViewCell.swift */; };
 		F033E5158EEBB86E0140E945 /* Pods_AstraZenecaChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85012738D5940F3B2D28EC6C /* Pods_AstraZenecaChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32E8BD762320D7CF00B5E962 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		32E8BD7B2320DB1D00B5E962 /* AstraRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraRepository.swift; sourceTree = "<group>"; };
+		32E8BD7D2320EA4D00B5E962 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		32F1B4F4231F6C08002EF63B /* AstraZenecaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstraZenecaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F1B4F7231F6C08002EF63B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F1B4F9231F6C08002EF63B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		32F1B4FE231F6C0D002EF63B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32F1B501231F6C0D002EF63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32F1B503231F6C0D002EF63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F1B50F231F7340002EF63B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		32F1B511231F737B002EF63B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		32F1B513231F7387002EF63B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		32F1B515231F74A9002EF63B /* ContactsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDataSource.swift; sourceTree = "<group>"; };
+		32F1B519231F753C002EF63B /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		388682612BFFD6C2C6F53FC3 /* Pods-AstraZenecaChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraZenecaChallenge.release.xcconfig"; path = "Target Support Files/Pods-AstraZenecaChallenge/Pods-AstraZenecaChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		6B5F147675FFC494855EC47C /* Pods-AstraZenecaChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstraZenecaChallenge.debug.xcconfig"; path = "Target Support Files/Pods-AstraZenecaChallenge/Pods-AstraZenecaChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		85012738D5940F3B2D28EC6C /* Pods_AstraZenecaChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstraZenecaChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +54,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32E8BD752320D79200B5E962 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32E8BD762320D7CF00B5E962 /* user.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32E8BD782320DAF900B5E962 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				32E8BD7B2320DB1D00B5E962 /* AstraRepository.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		32F1B4EB231F6C08002EF63B = {
 			isa = PBXGroup;
 			children = (
@@ -59,13 +91,53 @@
 		32F1B4F6231F6C08002EF63B /* AstraZenecaChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				32F1B4F7231F6C08002EF63B /* AppDelegate.swift */,
-				32F1B4F9231F6C08002EF63B /* ProfileViewController.swift */,
+				32E8BD782320DAF900B5E962 /* Network */,
+				32F1B50D231F72EA002EF63B /* Utility */,
+				32F1B50C231F72DD002EF63B /* Controllers */,
+				32F1B50B231F72D7002EF63B /* Views */,
+				32F1B50A231F72D2002EF63B /* Models */,
 				32F1B4FE231F6C0D002EF63B /* Assets.xcassets */,
+				32F1B4F7231F6C08002EF63B /* AppDelegate.swift */,
 				32F1B500231F6C0D002EF63B /* LaunchScreen.storyboard */,
 				32F1B503231F6C0D002EF63B /* Info.plist */,
 			);
 			path = AstraZenecaChallenge;
+			sourceTree = "<group>";
+		};
+		32F1B50A231F72D2002EF63B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32F1B511231F737B002EF63B /* Data.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32F1B50B231F72D7002EF63B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32F1B513231F7387002EF63B /* ProfileView.swift */,
+				32F1B519231F753C002EF63B /* ContactTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32F1B50C231F72DD002EF63B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32F1B4F9231F6C08002EF63B /* ProfileViewController.swift */,
+				32E8BD7D2320EA4D00B5E962 /* ContactViewController.swift */,
+				32F1B515231F74A9002EF63B /* ContactsDataSource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		32F1B50D231F72EA002EF63B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				32F1B50F231F7340002EF63B /* Constants.swift */,
+				32E8BD752320D79200B5E962 /* Resources */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		66F3C7480442C2CB9EC1EA45 /* Pods */ = {
@@ -145,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E8BD772320D7CF00B5E962 /* user.json in Resources */,
 				32F1B502231F6C0D002EF63B /* LaunchScreen.storyboard in Resources */,
 				32F1B4FF231F6C0D002EF63B /* Assets.xcassets in Resources */,
 			);
@@ -199,8 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F1B512231F737B002EF63B /* Data.swift in Sources */,
+				32E8BD7C2320DB1D00B5E962 /* AstraRepository.swift in Sources */,
 				32F1B4FA231F6C08002EF63B /* ProfileViewController.swift in Sources */,
+				32F1B514231F7387002EF63B /* ProfileView.swift in Sources */,
+				32F1B516231F74A9002EF63B /* ContactsDataSource.swift in Sources */,
+				32E8BD7E2320EA4D00B5E962 /* ContactViewController.swift in Sources */,
+				32F1B51A231F753C002EF63B /* ContactTableViewCell.swift in Sources */,
 				32F1B4F8231F6C08002EF63B /* AppDelegate.swift in Sources */,
+				32F1B510231F7340002EF63B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
