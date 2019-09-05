@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, ProfileViewDelegate {
+/// Porifle View Controller, initial view with profile information.
+final class ProfileViewController: UIViewController, ProfileViewDelegate {
 
     let profileView = ProfileView()
     
@@ -24,10 +25,6 @@ class ProfileViewController: UIViewController, ProfileViewDelegate {
         loadContacts()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     // MARK: - Data load
     fileprivate func loadContacts() {
         let localPath = Bundle.main.path(forResource: "user", ofType: "json")
@@ -37,7 +34,7 @@ class ProfileViewController: UIViewController, ProfileViewDelegate {
         let url = URL(fileURLWithPath: path)
         
         let repository = AstraRepository()
-        repository.execute(AstraData.self, url: url) { [weak self] result in
+        repository.execute(JsonData.self, url: url) { [weak self] result in
             guard let weakSelf = self else { return }
             switch result {
             case .success(let astraData):
@@ -52,7 +49,7 @@ class ProfileViewController: UIViewController, ProfileViewDelegate {
         }
     }
     
-    fileprivate func opsAlert() {
+    fileprivate func functionalityAlert() {
         let alert = UIAlertController(title: "Ops!",
                                       message: "Sorry, this functionality is not available",
                                       preferredStyle: .alert)
@@ -61,20 +58,13 @@ class ProfileViewController: UIViewController, ProfileViewDelegate {
     }
 }
 
-// MARK: - Welcome View Delegate
+// MARK: - Profile View Delegate
 extension ProfileViewController {
     func profileView(_ profileView: ProfileView, didTapAdd button: UIButton) {
-        opsAlert()
+        functionalityAlert()
     }
     
     func profileView(_ profileView: ProfileView, didTapSettings button: UIButton) {
-        opsAlert()
-    }
-}
-
-// MARK: - Table View Delegate
-extension ProfileView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        functionalityAlert()
     }
 }

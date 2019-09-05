@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Contact Table View Cell. Handle contact information as cell.
 final class ContactTableViewCell: UITableViewCell {
     
     // MARK: - Public properties
@@ -22,6 +23,7 @@ final class ContactTableViewCell: UITableViewCell {
         }
     }
     
+    /// Closure to handle button action
     var buttonDetailTap: (() -> Void)?
     
     lazy var contactImageView: UIImageView = {
@@ -68,7 +70,6 @@ final class ContactTableViewCell: UITableViewCell {
         usernameLabel.font = UIFont.boldSystemFont(ofSize: 17)
         usernameLabel.textColor = #colorLiteral(red: 0.003920887597, green: 0.003921952564, blue: 0.003920524381, alpha: 1)
         usernameLabel.textAlignment = .left
-        usernameLabel.text = "EfrenPB"
         return usernameLabel
     }()
     

@@ -13,7 +13,6 @@ import UIKit
 final class ContactsDataSource: NSObject, UITableViewDataSource {
     
     var contacts: [Contact] = []
-    var profileImage = [#imageLiteral(resourceName: "Image1"), #imageLiteral(resourceName: "Image2"), #imageLiteral(resourceName: "Image3"), #imageLiteral(resourceName: "Image4"), #imageLiteral(resourceName: "Image5"), #imageLiteral(resourceName: "Image6")]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contacts.count
@@ -25,14 +24,15 @@ final class ContactsDataSource: NSObject, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let contactCell = tableView.dequeueReusableCell(withIdentifier: Constants.contactCellIdentifier, for: indexPath) as? ContactTableViewCell else {
-            fatalError("Unable cast cell as LanguageTableViewCell")
+            fatalError("Unable cast cell as ContactTableViewCell")
         }
-        contactCell.contactImageView.image = profileImage[indexPath.row]
+        contactCell.contactImageView.image = Constants.profileImage[indexPath.row]
         contactCell.contact = contacts[indexPath.row]
         
+        /// Closure detail action
         contactCell.buttonDetailTap = { () in
             let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController
-            let main = ContactViewController()
+            let main = ContactViewController(with: self.contacts[indexPath.row], index: indexPath.row)
             navigationController?.pushViewController(main, animated: false)
         }
         return contactCell

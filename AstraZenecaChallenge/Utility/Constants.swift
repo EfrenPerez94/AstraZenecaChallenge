@@ -7,7 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
-class Constants {
+final class Constants {
+    // Cell identifiers
     static let contactCellIdentifier = "ContactTableViewCell"
+    static let postCellIdentifier = "PostTableViewCell"
+
+    // Profile images array
+    static let profileImage = [#imageLiteral(resourceName: "Image1"), #imageLiteral(resourceName: "Image2"), #imageLiteral(resourceName: "Image3"), #imageLiteral(resourceName: "Image4"), #imageLiteral(resourceName: "Image5"), #imageLiteral(resourceName: "Image6")]
+
 }

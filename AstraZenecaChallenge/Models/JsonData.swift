@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// Data struct to store data retrieve from json.
-struct AstraData: Codable {
+struct JsonData: Codable {
     let data: Data
 }
 
@@ -18,12 +18,8 @@ struct Data: Codable {
     let user: [Contact]
 }
 
-/// User struct to store data retrieve from json.
+/// Contact struct to store data retrieve from json.
 struct Contact: Codable {
-    let userId: String
-    let lastName: String
-    let firstName: String
-    let department: String
     let email: String
     let userName: String
     let post: [Post]?

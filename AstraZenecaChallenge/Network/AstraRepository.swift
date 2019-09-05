@@ -8,9 +8,9 @@
 
 import Foundation
 
-class AstraRepository {
+final class AstraRepository {
     
-    /// Perform a GET request, handling errors and response.
+    /// Perform a request, handling errors and response.
     /// - Note: The data retrive must to be a JSON to perform the decode.
     ///
     /// - Parameters:

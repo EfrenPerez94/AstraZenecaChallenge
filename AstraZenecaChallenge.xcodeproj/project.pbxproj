@@ -10,12 +10,15 @@
 		32E8BD772320D7CF00B5E962 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E8BD762320D7CF00B5E962 /* user.json */; };
 		32E8BD7C2320DB1D00B5E962 /* AstraRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E8BD7B2320DB1D00B5E962 /* AstraRepository.swift */; };
 		32E8BD7E2320EA4D00B5E962 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E8BD7D2320EA4D00B5E962 /* ContactViewController.swift */; };
+		32E8BD802321583700B5E962 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E8BD7F2321583700B5E962 /* ContactView.swift */; };
+		32E8BD822321585200B5E962 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E8BD812321585200B5E962 /* PostTableViewCell.swift */; };
+		32E8BD8423215D0F00B5E962 /* PostsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E8BD8323215D0F00B5E962 /* PostsDataSource.swift */; };
 		32F1B4F8231F6C08002EF63B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B4F7231F6C08002EF63B /* AppDelegate.swift */; };
 		32F1B4FA231F6C08002EF63B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B4F9231F6C08002EF63B /* ProfileViewController.swift */; };
 		32F1B4FF231F6C0D002EF63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F1B4FE231F6C0D002EF63B /* Assets.xcassets */; };
 		32F1B502231F6C0D002EF63B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F1B500231F6C0D002EF63B /* LaunchScreen.storyboard */; };
 		32F1B510231F7340002EF63B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B50F231F7340002EF63B /* Constants.swift */; };
-		32F1B512231F737B002EF63B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B511231F737B002EF63B /* Data.swift */; };
+		32F1B512231F737B002EF63B /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B511231F737B002EF63B /* JsonData.swift */; };
 		32F1B514231F7387002EF63B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B513231F7387002EF63B /* ProfileView.swift */; };
 		32F1B516231F74A9002EF63B /* ContactsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B515231F74A9002EF63B /* ContactsDataSource.swift */; };
 		32F1B51A231F753C002EF63B /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F1B519231F753C002EF63B /* ContactTableViewCell.swift */; };
@@ -26,6 +29,9 @@
 		32E8BD762320D7CF00B5E962 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		32E8BD7B2320DB1D00B5E962 /* AstraRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstraRepository.swift; sourceTree = "<group>"; };
 		32E8BD7D2320EA4D00B5E962 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		32E8BD7F2321583700B5E962 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		32E8BD812321585200B5E962 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		32E8BD8323215D0F00B5E962 /* PostsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDataSource.swift; sourceTree = "<group>"; };
 		32F1B4F4231F6C08002EF63B /* AstraZenecaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstraZenecaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F1B4F7231F6C08002EF63B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F1B4F9231F6C08002EF63B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +39,7 @@
 		32F1B501231F6C0D002EF63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32F1B503231F6C0D002EF63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32F1B50F231F7340002EF63B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		32F1B511231F737B002EF63B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		32F1B511231F737B002EF63B /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
 		32F1B513231F7387002EF63B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		32F1B515231F74A9002EF63B /* ContactsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDataSource.swift; sourceTree = "<group>"; };
 		32F1B519231F753C002EF63B /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
@@ -57,6 +63,7 @@
 		32E8BD752320D79200B5E962 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				32F1B4FE231F6C0D002EF63B /* Assets.xcassets */,
 				32E8BD762320D7CF00B5E962 /* user.json */,
 			);
 			path = Resources;
@@ -96,7 +103,6 @@
 				32F1B50C231F72DD002EF63B /* Controllers */,
 				32F1B50B231F72D7002EF63B /* Views */,
 				32F1B50A231F72D2002EF63B /* Models */,
-				32F1B4FE231F6C0D002EF63B /* Assets.xcassets */,
 				32F1B4F7231F6C08002EF63B /* AppDelegate.swift */,
 				32F1B500231F6C0D002EF63B /* LaunchScreen.storyboard */,
 				32F1B503231F6C0D002EF63B /* Info.plist */,
@@ -107,7 +113,7 @@
 		32F1B50A231F72D2002EF63B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				32F1B511231F737B002EF63B /* Data.swift */,
+				32F1B511231F737B002EF63B /* JsonData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,7 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				32F1B513231F7387002EF63B /* ProfileView.swift */,
+				32E8BD7F2321583700B5E962 /* ContactView.swift */,
 				32F1B519231F753C002EF63B /* ContactTableViewCell.swift */,
+				32E8BD812321585200B5E962 /* PostTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 				32F1B4F9231F6C08002EF63B /* ProfileViewController.swift */,
 				32E8BD7D2320EA4D00B5E962 /* ContactViewController.swift */,
 				32F1B515231F74A9002EF63B /* ContactsDataSource.swift */,
+				32E8BD8323215D0F00B5E962 /* PostsDataSource.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,12 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F1B512231F737B002EF63B /* Data.swift in Sources */,
+				32E8BD822321585200B5E962 /* PostTableViewCell.swift in Sources */,
+				32F1B512231F737B002EF63B /* JsonData.swift in Sources */,
 				32E8BD7C2320DB1D00B5E962 /* AstraRepository.swift in Sources */,
 				32F1B4FA231F6C08002EF63B /* ProfileViewController.swift in Sources */,
+				32E8BD802321583700B5E962 /* ContactView.swift in Sources */,
 				32F1B514231F7387002EF63B /* ProfileView.swift in Sources */,
 				32F1B516231F74A9002EF63B /* ContactsDataSource.swift in Sources */,
 				32E8BD7E2320EA4D00B5E962 /* ContactViewController.swift in Sources */,
+				32E8BD8423215D0F00B5E962 /* PostsDataSource.swift in Sources */,
 				32F1B51A231F753C002EF63B /* ContactTableViewCell.swift in Sources */,
 				32F1B4F8231F6C08002EF63B /* AppDelegate.swift in Sources */,
 				32F1B510231F7340002EF63B /* Constants.swift in Sources */,

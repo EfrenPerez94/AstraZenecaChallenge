@@ -15,6 +15,7 @@ protocol ProfileViewDelegate: class {
     func profileView(_ profileView: ProfileView, didTapSettings button: UIButton)
 }
 
+/// Profile View. Show profile information an a list of contacts.
 final class ProfileView: UIView {
     
     // MARK: Public properties
@@ -59,7 +60,7 @@ final class ProfileView: UIView {
     
     /// Initializes UI elements
     private func setup() {
-        backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         addSubview(profileImageView)
         addSubview(usernameLabel)
         addSubview(emailLabel)
@@ -67,7 +68,6 @@ final class ProfileView: UIView {
         // Actions
         addButton.addTarget(self, action: #selector(addTouchUpInside(_:)), for: .touchUpInside)
         settingsButton.addTarget(self, action: #selector(settingsTouchUpInside(_:)), for: .touchUpInside)
-
     }
     
     // MARK: WelcomeView delegates
@@ -118,8 +118,9 @@ final class ProfileView: UIView {
         let contactsTableView = UITableView()
         contactsTableView.translatesAutoresizingMaskIntoConstraints = false
         contactsTableView.register(ContactTableViewCell.self, forCellReuseIdentifier: Constants.contactCellIdentifier)
+        contactsTableView.rowHeight = 200
         contactsTableView.dataSource = contactsDataSource
-        contactsTableView.delegate = self
+        contactsTableView.tableFooterView = UIView()
         return contactsTableView
     }()
     
